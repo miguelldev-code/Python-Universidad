@@ -1,3 +1,4 @@
+
 # TIPOS DE DATOS 
 
 entero = 10  # int
