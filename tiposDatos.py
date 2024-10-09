@@ -1,6 +1,4 @@
-
 # TIPOS DE DATOS 
-
 entero = 10  # int
 cadena = "Texto" # str
 flotante = 10.10 # float
