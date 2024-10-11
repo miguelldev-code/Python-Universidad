@@ -10,5 +10,4 @@ elif mes == 6 or mes == 7 or mes == 8:
 elif mes == 9 or mes == 10  or mes == 11:
     estacion = "Otoño"
 
-
 print(f"En el mes {mes}, la estacion es {estacion}")
