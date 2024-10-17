@@ -2,7 +2,7 @@
 # while condicion:
 #     print("Condicion verdadera")
 # else:
-#     print("Falsooo")
+#     print("Falso")
 
 contador = 0
 while contador <= 3:
