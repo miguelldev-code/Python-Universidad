@@ -4,12 +4,12 @@
 # Se recuerda que la media aritmética de un conjunto de valores es la suma
 # de esos valores dividida por la cantidad de valores.
 
-cantidadNumeros = float(input("Ingresa la cantidad de numeros: "))
+cantidadNumeros = int(input("Ingresa la cantidad de numeros: "))
 while cantidadNumeros <= 0:
     print(f"El numero debe ser mayor a 0")
-    cantidadNumeros = float(input("Ingresa la cantidad de numeros: "))
+    cantidadNumeros = int(input("Ingresa la cantidad de numeros: "))
 
-numero = float(input("Ingresa el numero 1: "))
+numero = int(input("Ingresa el numero 1: "))
 maximo = numero
 minimo = numero
 suma = numero

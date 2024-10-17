@@ -1,6 +1,7 @@
 # iterar significa recorrer cada elemento de un conjunto de datos
 
-#                   BREAK
+#                BREAK
+
 # Sale del bucle inmediatamente, sin importar si la 
 # condición sigue siendo verdadera.
 cadena = "Texto"
