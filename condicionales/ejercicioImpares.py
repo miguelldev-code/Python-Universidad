@@ -1,4 +1,4 @@
-# ingresar numero positivo e imprimir impares
+# Ingresar numero positivo e imprimir impares
 
 #    Practica WHILE para validacion
 numero = int(input("Ingresa un numero entero positivo: "))
