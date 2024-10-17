@@ -1,13 +1,10 @@
-# condicion = True
-# while condicion:
-#     print("Condicion verdadera")
-# else:
-#     print("Falso")
+condicion = True
 
-contador = 0
-while contador <= 3:
-    print(contador)
-    contador += 1
+while condicion:
+    print("Condicion verdadera")
 else:
-    print(contador, "Fuera del ciclo")
+    print("Falso")
+
+
+
 

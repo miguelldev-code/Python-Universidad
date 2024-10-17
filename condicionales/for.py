@@ -1,13 +1,5 @@
-# BREAK
-cadena = "Texto"
-for letra in cadena:
-    print(letra)
-    break
-else:
-    print("Fin del ciclo") # No se ejecuta
+#for variable in secuencia:
+    # codigo a repetir
 
-# CONTINUE
-for i in range(6):
-    if i %  2 != 0:
-        continue
-    print(f"Valor: {i}")
+for i in range(1, 6):
+    print(f"Este es el mensaje número {i}")
