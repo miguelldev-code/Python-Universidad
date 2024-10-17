@@ -10,6 +10,6 @@ while numero < 0:
 print(f"El numero es: {numero}")
 
 #       Practica FOR
-#             inicio,final,condicion 
+#             inicio,final,incremento 
 for i in range(1, numero+1, 2):
     print(i, end=",")
