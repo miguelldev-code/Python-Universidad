@@ -18,6 +18,3 @@ for i in range(1, cantidadNumeros):
     # 
     # numero = numeroMayor
 
-print("Fin del programa")
-
-
