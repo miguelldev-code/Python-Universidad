@@ -4,6 +4,9 @@
 
 # Sale del bucle inmediatamente, sin importar si la 
 # condición sigue siendo verdadera.
+
+#La variable letra toca el valor de cada caracter
+#De la variable cadena
 cadena = "Texto"
 for letra in cadena:
     print(letra)
