@@ -2,6 +2,8 @@
 # una acción. El bucle for se ejecuta un número definido 
 # de veces.
 
+    #      SINTAXIS
+
               #limite en especifico
               # (incio, final, incremento)
 #for variable in secuencia:

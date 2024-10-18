@@ -10,7 +10,7 @@
 cadena = "Texto"
 for letra in cadena:
     print(letra)
-    break
+    break  # Termina el bucle con la primera iteracion
 else:
     print("Fin del ciclo") # No se ejecuta
 
@@ -19,6 +19,6 @@ else:
 # Salta el resto del código en la iteración 
 # actual y pasa a la siguiente iteración.
 for i in range(1, 6):
-    if i == 3: #Se salta el 3
-        continue
+    if i == 3: 
+        continue  # Se salta el 3 y continua con la iteracion
     print(i)

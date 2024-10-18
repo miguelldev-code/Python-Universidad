@@ -5,7 +5,7 @@ numero = int(input("Ingresa un numero entero positivo: "))
 while numero < 0:   
     print("No es positivo")
     numero = int(input("Ingresa un numero entero positivo: "))
-    continue
+    
 
 print(f"El numero es: {numero}")
 
