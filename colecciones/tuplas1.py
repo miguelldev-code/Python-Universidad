@@ -1,3 +1,5 @@
+
+
 # Crear una tupla de números
 tupla_numeros = (10, 20, 30, 40, 50)
 
