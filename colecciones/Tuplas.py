@@ -1,20 +1,22 @@
 # Explicacion sintaxis
 
-# Explicacion
-
 #variable = (enteros, cadenas, flotantes, booleanos)
 
-#variable = (10, "Texto", 5.5, True)
+tupla = (10, "Texto", 5.5, True)
 
-# Diferencia con Listas
+print(type(tupla))
 
-# Explicacion
+lista = [10, "Texto", 5.5, True]
 
-variable = [10, "Texto", 5.5, True]
+print(type(lista))
 
-variable = variable.append("Otro texto")
+# Es inmutable, no se pueden modificar sus datos
 
-print(variable)
+# Grupos de valores relacionados que estan relacionados
+# entre si y no deben cambiar
+
+# dias_semana = ("Lunes", "Martes", "Miércoles", "Jueves", "Viernes")
+# coordenadas = (40.7128, -74.0060)  # Latitud y longitud de Nueva York
 
 
 

@@ -1,4 +1,4 @@
-
+# Acceder a los numeros de una tupla
 
 # Crear una tupla de números
 tupla_numeros = (10, 20, 30, 40, 50)
