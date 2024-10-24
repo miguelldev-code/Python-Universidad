@@ -1,4 +1,5 @@
-#Dada una lista con elementos duplicados, crea una nueva lista sin los duplicados.
+# Dada una lista con elementos duplicados, crea una nueva 
+# lista sin los duplicados.
 
 
 # Lista con elementos duplicados

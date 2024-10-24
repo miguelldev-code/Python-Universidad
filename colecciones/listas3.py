@@ -1,3 +1,6 @@
+# Pedir 5 palabras e imprimir la lista con las palabras 
+# en mayuscula
+
 # Lista vacía para almacenar las palabras
 palabras = []
 
