@@ -13,4 +13,5 @@ for numero in numeros:
     if numero not in numeros_sin_duplicados:
         numeros_sin_duplicados.append(numero)
 
+
 print("Lista sin duplicados:", numeros_sin_duplicados)
