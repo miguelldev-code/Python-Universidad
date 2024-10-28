@@ -5,6 +5,10 @@
 # Los pedidos se almacenan y luego pueden visualizarse con su costo total.
 # Si se selecciona salir, el programa termina.
 # Maneja entradas inválidas mostrando un mensaje de error.
+
+
+
+
 # Definir el menú de comidas: una lista que contiene los nombres de los platos disponibles.
 
 # Definir los precios correspondientes a cada plato en el menú.
@@ -54,7 +58,6 @@
 
         # Opción por defecto: Manejar entradas inválidas.
             # Mostrar un mensaje indicando que el comando ingresado no es válido.
-
 
 
 

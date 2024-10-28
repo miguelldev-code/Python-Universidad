@@ -12,3 +12,5 @@ a, b = b, a
 print("Valores intercambiados:", a, b)
 
 #permite asignar valores a múltiples variables de forma compacta
+
+
