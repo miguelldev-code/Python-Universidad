@@ -1,22 +1,24 @@
-# Par clave-valor: Cada elemento tiene dos partes: una clave y un valor. 
-# Por ejemplo, en el par nombre: "Juan", "nombre" es la clave y "Juan" es el valor.
+# SINTAXIS
+ 
+# Listas
+variable = []
 
-# Estructura de un Diccionario: Los diccionarios se definen usando llaves {}.
-#  Dentro, los pares clave-valor están separados por comas, y cada clave se 
-# separa de su valor con dos puntos :.
+# Tuplas
+variable = ()
 
-estudiante = {
-    "nombre": "Juan",
-    "edad": 20,
-    "carrera": "Ingeniería"
-}
+# Conjuntos
+variable = {}
 
+# permiten estructurar y organizar la información de forma lógica
 
-print(estudiante["nombre"])  # Output: Juan
+# Diccionario
+variablee = {} 
+print(type(variablee))
 
-#   Acceso a Valores: Puedes acceder al valor de un diccionario usando la clave 
-# correspondiente entre corchetes [].
+# Nos permite hacer:
 
-print(estudiante.get("promedio", "No especificado"))  # Output: No especificado
-
-
+#Almacenar Datos Relacionados con Etiquetas
+#Acceso Directo a Información Específica
+#Realizar Búsquedas Rápidas y Eficientes
+#Organizar Datos de Configuración
+#Relacionar Objetos Complejos en Bases de Datos Simples
