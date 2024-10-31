@@ -6,12 +6,12 @@
 numeros = [1, 2, 2, 3, 4, 4, 5]
 
 # Lista para almacenar los números únicos
-numeros_sin_duplicados = []
+numeros_unicos = []
 
 # Recorrer la lista original y agregar solo los elementos únicos
 for numero in numeros:
-    if numero not in numeros_sin_duplicados:
-        numeros_sin_duplicados.append(numero)
+    if numero not in numeros_unicos:
+        numeros_unicos.append(numero)
 
 
-print("Lista sin duplicados:", numeros_sin_duplicados)
+print("Lista sin duplicados:", numeros_unicos)
