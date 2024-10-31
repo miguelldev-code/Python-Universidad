@@ -2,18 +2,21 @@
  
 # Listas
 variable = []
-
+print(type(variable))
 # Tuplas
 variable = ()
-
+print(type(variable))
 # Conjuntos
-variable = {}
+variable = set()  # si es un conjunto vacio de usa set()
+print(type(variable))
 
 # permiten estructurar y organizar la información de forma lógica
 
-# Diccionario
-variablee = {} 
-print(type(variablee))
+# Diccionarios
+variable = {"Clave":"Valor de la clase"}
+print(type(variable))
+print(variable)
+
 
 # Nos permite hacer:
 

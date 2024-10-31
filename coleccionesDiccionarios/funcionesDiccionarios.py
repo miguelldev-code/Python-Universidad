@@ -19,7 +19,6 @@ productos = {
 }
 print("Precio de la banana:", productos["banana"])  # Output: 0.5
 
-
 #Organizar Datos de Configuración
 
 configuracion = {
