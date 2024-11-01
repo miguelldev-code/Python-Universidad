@@ -1,18 +1,20 @@
 # SINTAXIS
  
-# Listas
-variable = []
-print(type(variable))
-# Tuplas
-variable = ()
-print(type(variable))
-# Conjuntos
-variable = set()  # si es un conjunto vacio de usa set()
-print(type(variable))
+#Conjuntos o set
+# Mutables por medio de metodos
+# add, remove, union 
+# NO SE ACCEDE POR INDICE
+# No tiene posiciones fijas
+usuario = ("Juan", "juan", "1234")
+print(type(usuario))
 
 # permiten estructurar y organizar la información de forma lógica
 
 # Diccionarios
+# Mutables por medio de metodos
+# add, remove, union 
+# NO SE ACCEDE POR INDICE
+# No tiene orden especifico
 variable = {"Clave":"Valor de la clave"}
 print(type(variable))
 print(variable)

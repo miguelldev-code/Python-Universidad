@@ -3,14 +3,30 @@
 b = set()
 print(type(b))
 
+
+#Listas
+# Mutables por medio de metodos
+# appened, pop, insert
+# SE ACCEDE POR MEDIO DE INDICES
 usuario = {"Juan", "juan", "1234"}
 print(type(usuario))
 
+#Tuplas
+# Inmutables
+# SE ACCEDE POR MEDIO DE INDICES
 usuario = ["Juan", "juan", "1234"]
 print(type(usuario))
 
+#Conjuntos o set
+# Mutables por medio de metodos
+# add, remove, union 
+# NO SE ACCEDE POR INDICE
+# No tiene orden especifico
 usuario = ("Juan", "juan", "1234")
 print(type(usuario))
+
+# SE PUEDEN USAR  PARA
+# # Datos no duplicados y operaciones de pertenencia o comparación. 
 
 # usar la función set() o las llaves {}.
 
