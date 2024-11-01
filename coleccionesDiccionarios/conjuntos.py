@@ -3,18 +3,17 @@
 b = set()
 print(type(b))
 
-
 #Listas
 # Mutables por medio de metodos
 # appened, pop, insert
 # SE ACCEDE POR MEDIO DE INDICES
-usuario = {"Juan", "juan", "1234"}
+usuario = ["Juan", "juan", "1234"]
 print(type(usuario))
 
 #Tuplas
 # Inmutables
 # SE ACCEDE POR MEDIO DE INDICES
-usuario = ["Juan", "juan", "1234"]
+usuario = ("Juan", "juan", "1234")
 print(type(usuario))
 
 #Conjuntos o set
@@ -22,7 +21,7 @@ print(type(usuario))
 # add, remove, union 
 # NO SE ACCEDE POR INDICE
 # No tiene orden especifico
-usuario = ("Juan", "juan", "1234")
+usuario = {"Juan", "juan", "1234"}
 print(type(usuario))
 
 # SE PUEDEN USAR  PARA
@@ -64,4 +63,3 @@ print(C)  # Output: {1, 2}
 
 C = A ^ B  # o A.symmetric_difference(B), todos los que no se repitan
 print(C)  # Output: {1, 2, 4, 5}
-
