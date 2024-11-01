@@ -13,7 +13,7 @@ print(type(variable))
 # permiten estructurar y organizar la información de forma lógica
 
 # Diccionarios
-variable = {"Clave":"Valor de la clase"}
+variable = {"Clave":"Valor de la clave"}
 print(type(variable))
 print(variable)
 
