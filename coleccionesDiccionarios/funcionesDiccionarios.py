@@ -1,17 +1,14 @@
-#Almacenar Datos Relacionados con Etiquetas
+# Ejemplo de uso de diccionarios en Python
 
+# 1. Almacenar datos relacionados con etiquetas
 usuario = {
     "nombre": "María",
     "edad": 28,
     "email": "maria@example.com"
 }
-
-#Acceso Directo a Información Específica
-
 print(usuario["nombre"])  # Output: María
 
-#Realizar Búsquedas Rápidas y Eficientes
-
+# 2. Acceso directo a información específica
 productos = {
     "manzana": 1.2,
     "banana": 0.5,
@@ -19,8 +16,7 @@ productos = {
 }
 print("Precio de la banana:", productos["banana"])  # Output: 0.5
 
-#Organizar Datos de Configuración
-
+# 3. Organizar datos de configuración
 configuracion = {
     "modo": "oscuro",
     "volumen": 70,
@@ -28,8 +24,7 @@ configuracion = {
 }
 print(configuracion["modo"])  # Output: oscuro
 
-#Relacionar Objetos Complejos en Bases de Datos Simples
-
+# 4. Relacionar objetos complejos en bases de datos simples
 estudiantes = {
     1: {"nombre": "Juan", "edad": 20, "carrera": "Ingeniería"},
     2: {"nombre": "Ana", "edad": 22, "carrera": "Matemáticas"}
