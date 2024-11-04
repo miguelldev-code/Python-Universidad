@@ -1,9 +1,10 @@
-# Par clave-valor: Cada elemento tiene dos partes: una clave y un valor. 
-# Por ejemplo, en el par nombre: "Juan", "nombre" es la clave y "Juan" es el valor.
+# Par clave-valor en diccionarios:
+# Cada elemento en un diccionario está compuesto por una clave y un valor.
+# Ejemplo: En el par "nombre": "Juan", "nombre" es la clave y "Juan" es el valor.
 
-# Estructura de un Diccionario: Los diccionarios se definen usando llaves {}.
-# Dentro, los pares clave-valor están separados por comas, y cada clave se 
-# separa de su valor con dos puntos :.
+# Estructura de un diccionario:
+# Los diccionarios se definen con llaves {}.
+# Cada par clave-valor se separa por comas y cada clave se asocia a su valor con dos puntos :.
 
 estudiante = {
     "nombre": "Juan",
@@ -11,9 +12,9 @@ estudiante = {
     "carrera": "Ingeniería"
 }
 
+# Acceso directo a un valor usando su clave
 print(estudiante["nombre"])  # Output: Juan
 
-#   Acceso a Valores: Puedes acceder al valor de un diccionario usando la clave 
-# correspondiente entre corchetes [].
-
+# Acceso a un valor con get():
+# Si la clave no existe, get() devuelve un valor predeterminado (en este caso, "No especificado").
 print(estudiante.get("promedio", "No especificado"))  # Output: No especificado
