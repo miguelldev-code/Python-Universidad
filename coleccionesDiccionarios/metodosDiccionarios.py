@@ -1,31 +1,25 @@
-        
-#           Diccionario
-persona = {"nombre": "Ana", "Edad": 28}
+# Diccionario de ejemplo
+persona = {"nombre": "Ana", "edad": 28}
 
 # get()
-# Devuelve el valor de la clave especificada
-
+# Obtiene el valor de una clave especificada. Permite agregar un valor predeterminado si la clave no existe.
 print(persona.get("nombre"))  # Output: Ana
 print(persona.get("profesion", "Desconocido"))  # Output: Desconocido
 
 # keys()
-# Devuelve una vista de todas las claves del diccionario.
-
-persona = {"nombre": "Ana", "edad": 28}
+# Devuelve una vista de todas las claves del diccionario, útil para iterar sobre ellas.
 print(persona.keys())  # Output: dict_keys(['nombre', 'edad'])
 
-# .values()
-# Devuelve una vista de todos los valores en el diccionario.
-
+# values()
+# Devuelve una vista de todos los valores en el diccionario, útil para obtener solo los datos almacenados.
 print(persona.values())  # Output: dict_values(['Ana', 28])
 
 # items()
-# Devuelve una vista de los pares clave-valor en forma de tuplas.
+# Devuelve una vista de los pares clave-valor como tuplas, ideal para recorrer el diccionario en pares.
 print(persona.items())  # Output: dict_items([('nombre', 'Ana'), ('edad', 28)])
 
-# update() 
-# Actualiza un diccionario con otro diccionario
-
-infoPersona = {"Profesion":"Ingeniera"}
-persona.update(infoPersona)
-print(persona)  # Output: {'nombre': 'Ana', 'edad': 30, 'profesion': 'Ingeniera'}
+# update()
+# Actualiza el diccionario con otro diccionario, agregando o modificando las claves y valores según el contenido del nuevo diccionario.
+info_adicional = {"profesion": "Ingeniera"}
+persona.update(info_adicional)
+print(persona)  # Output: {'nombre': 'Ana', 'edad': 28, 'profesion': 'Ingeniera'}
