@@ -1,65 +1,66 @@
-# Sintaxis
+# Sintaxis para definir diferentes tipos de colecciones en Python
 
+# 1. Conjuntos vacíos (Set)
+# Un conjunto vacío se define usando `set()`, no `{}`, ya que `{}` crea un diccionario vacío.
 b = set()
-print(type(b))
+print(type(b))  # Output: <class 'set'>
 
-#Listas
-# Mutables por medio de metodos
-# appened, pop, insert
-# SE ACCEDE POR MEDIO DE INDICES
+# 2. Listas
+# Son mutables (se pueden modificar después de su creación), y permiten acceder a los elementos por medio de índices.
+# Ejemplo de lista:
 usuario = ["Juan", "juan", "1234"]
-print(type(usuario))
+print(type(usuario))  # Output: <class 'list'>
 
-#Tuplas
-# Inmutables
-# SE ACCEDE POR MEDIO DE INDICES
+# 3. Tuplas
+# Son inmutables (no se pueden modificar después de su creación) y también permiten el acceso por índices.
 usuario = ("Juan", "juan", "1234")
-print(type(usuario))
+print(type(usuario))  # Output: <class 'tuple'>
 
-#Conjuntos o set
-# Mutables por medio de metodos
-# add, remove, union 
-# NO SE ACCEDE POR INDICE
-# No tiene orden especifico
+# 4. Conjuntos (Set)
+# Son mutables, pero NO permiten acceder a sus elementos por índice y no tienen un orden específico.
+# Son útiles para almacenar datos únicos y realizar operaciones de pertenencia o comparación.
 usuario = {"Juan", "juan", "1234"}
-print(type(usuario))
+print(type(usuario))  # Output: <class 'set'>
 
-# SE PUEDEN USAR  PARA
-# # Datos no duplicados y operaciones de pertenencia o comparación. 
+# Ejemplo de uso de conjuntos (Set):
+# Para evitar elementos duplicados y trabajar con operaciones de conjuntos, como unión, intersección, etc.
 
-# usar la función set() o las llaves {}.
-
+# Crear un conjunto usando llaves {} o la función set()
 frutas = {"manzana", "banana", "naranja"}
+# O también se puede crear un conjunto a partir de una lista con `set()`
 frutas = set(["manzana", "banana", "naranja"])
 
-
-# Agregar y Eliminar Elementos
-
+# 5. Agregar y eliminar elementos en un conjunto
+# Método `add`: Añade un elemento al conjunto
 frutas.add("pera")
-print(frutas)
+print(frutas)  # Output: {'manzana', 'banana', 'naranja', 'pera'}
+
+# Método `remove`: Elimina un elemento del conjunto. Da error si el elemento no está presente.
 frutas.remove("banana")
-print(frutas)
-frutas.discard("banana")
-print(frutas)
+print(frutas)  # Output: {'manzana', 'naranja', 'pera'}
 
-# Unión de Conjuntos
+# Método `discard`: Similar a `remove`, pero no da error si el elemento no está presente.
+frutas.discard("banana")  # No hace nada porque "banana" ya fue removida
+print(frutas)  # Output: {'manzana', 'naranja', 'pera'}
 
+# 6. Operaciones de Conjuntos
+
+# Definimos dos conjuntos para ver cómo funcionan las operaciones
 A = {1, 2, 3}
 B = {3, 4, 5}
+
+# Unión de conjuntos (elementos en A o B o en ambos)
 C = A | B  # o A.union(B)
 print(C)  # Output: {1, 2, 3, 4, 5}
 
-# Intersección de Conjuntos, en comun
-
+# Intersección de conjuntos (elementos en común entre A y B)
 C = A & B  # o A.intersection(B)
 print(C)  # Output: {3}
 
-# Diferencia de Conjuntos, diferentes entre a en b
-
+# Diferencia de conjuntos (elementos en A que no están en B)
 C = A - B  # o A.difference(B)
 print(C)  # Output: {1, 2}
 
-# Diferencia Simétrica
-
-C = A ^ B  # o A.symmetric_difference(B), todos los que no se repitan
+# Diferencia simétrica (elementos únicos de A y B, sin los comunes)
+C = A ^ B  # o A.symmetric_difference(B)
 print(C)  # Output: {1, 2, 4, 5}
