@@ -1,6 +1,9 @@
-# Eliminar elementos duplicados de una Lista
+# Dada una lista con elementos duplicados, crea una nueva lista sin los duplicados.
 
-numeros = numeros = [1, 2, 2, 3, 4, 4, 5]
-numeros_unicos = list(set(numeros))  # Convertimos a conjunto y luego de nuevo a lista
-print("Números sin duplicados:", numeros_unicos)
-# Output: [1, 2, 3, 4, 5]
+# Lista con elementos duplicados
+numeros = [1, 2, 2, 3, 4, 4, 5]
+
+# Usamos un conjunto para eliminar duplicados y luego lo convertimos de nuevo en lista
+numeros_unicos = list(set(numeros))
+
+print("Lista sin duplicados:", numeros_unicos)
