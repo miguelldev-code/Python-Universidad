@@ -19,7 +19,7 @@ print(usuarios_set)
 
 # Ejemplo de un diccionario
 usuario = {"usuario": "Juan", "email": "juan@example.com", "edad": 25}
-print(type(configuraciones))  # Salida: <class 'dict'>
+print(type(usuario))  # Salida: <class 'dict'>
 print(usuario)
 
 
