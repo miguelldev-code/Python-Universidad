@@ -8,13 +8,10 @@ matematicas = {"Juan", "Ana", "Luis", "Marta"}
 fisica = {"Luis", "Ana", "Carlos"}
 
 # 1. Estudiantes en ambas materias (intersección)
-matematicas.intersection(fisica)
 print(matematicas & fisica)  # Output: {'Luis', 'Ana'}
 
 # 2. Estudiantes en al menos una materia (unión)
-matematicas.union(fisica)
 print(matematicas | fisica)  # Output: {'Juan', 'Ana', 'Luis', 'Marta', 'Carlos'}
 
 # 3. Estudiantes solo en matemáticas (diferencia)
-matematicas.difference(fisica)
 print(matematicas - fisica)  # Output: {'Juan', 'Marta'}
