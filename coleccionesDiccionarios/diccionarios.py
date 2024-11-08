@@ -18,12 +18,8 @@ print(usuarios_set)
 # - No tiene un orden específico en versiones anteriores a Python 3.7 (en adelante, mantiene el orden de inserción).
 
 # Ejemplo de un diccionario
-configuraciones = {"usuario": "Juan", "email": "juan@example.com", "edad": 25}
+usuario = {"usuario": "Juan", "email": "juan@example.com", "edad": 25}
 print(type(configuraciones))  # Salida: <class 'dict'>
-print(configuraciones)
+print(usuario)
 
-# Beneficios de los diccionarios:
-# - Almacenar datos relacionados con etiquetas, como la configuración de un sistema.
-# - Acceso directo a información específica a través de la clave.
-# - Realización de búsquedas rápidas y eficientes.
-# - Organización clara de datos de configuración o información compleja.
+

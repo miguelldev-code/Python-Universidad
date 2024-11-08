@@ -1,4 +1,8 @@
-# Agenda de contactos
+
+
+#                       AGENDA DE CONTACTOS                   
+
+
 # Funciones básicas para agregar, buscar, actualizar, eliminar y ver contactos.
 
 # Diccionario para almacenar la agenda de contactos
@@ -7,8 +11,12 @@
 # - El valor es el número de teléfono.
 agenda = {}
 
-# Menú de acciones para gestionar contactos
-def menu_acciones():
+
+ 
+
+while True:
+    # Menú de acciones para gestionar contactos
+
     print("\nOpciones disponibles:")
     print("1. Agregar contacto")
     print("2. Buscar contacto")
@@ -17,8 +25,6 @@ def menu_acciones():
     print("5. Ver todos los contactos")
     print("6. Salir")
 
-while True:
-    menu_acciones()
     accion = input("\nSelecciona una opción (1-6): ")
 
     if accion == "1":  # Agregar contacto
