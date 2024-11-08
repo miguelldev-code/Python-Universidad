@@ -1,17 +1,32 @@
-#Supongamos que tenemos dos listas de estudiantes en diferentes materias, y queremos saber:
+# Gestión de Inscripciones en Actividades
 
-#¿Quiénes están inscritos en ambas materias?
-#¿Quiénes están inscritos en al menos una materia?
-#¿Quiénes están solo en la primera materia y no en la segunda?
+# Registrar los estudiantes que participan en cada actividad.
+# Identificar los estudiantes que están en varias actividades.
+# Encontrar estudiantes únicos que solo están en una actividad.
+# Encontrar estudiantes que no están inscritos en ninguna actividad.
 
-matematicas = {"Juan", "Ana", "Luis", "Marta"}
-fisica = {"Luis", "Ana", "Carlos"}
+# Conjuntos de estudiantes inscritos en cada actividad
+futbol = {"Ana", "Carlos", "Juan", "Marta", "Luis"}
+danza = {"Ana", "Elena", "Marta", "Luis", "Raquel"}
+ajedrez = {"Carlos", "Raquel", "Luis", "Jorge"}
 
-# 1. Estudiantes en ambas materias (intersección)
-print(matematicas & fisica)  # Output: {'Luis', 'Ana'}
+# 1. Encontrar estudiantes que participan en más de una actividad (intersección)
+multi_actividades = (futbol & danza) | (futbol & ajedrez) | (danza & ajedrez)
+print("Estudiantes en múltiples actividades:", multi_actividades)
 
-# 2. Estudiantes en al menos una materia (unión)
-print(matematicas | fisica)  # Output: {'Juan', 'Ana', 'Luis', 'Marta', 'Carlos'}
+# 2. Encontrar estudiantes únicos que solo están en una actividad (diferencia)
+solo_futbol = futbol - danza - ajedrez
+solo_danza = danza - futbol - ajedrez
+solo_ajedrez = ajedrez - futbol - danza
+print("Estudiantes solo en futbol:", solo_futbol)
+print("Estudiantes solo en danza:", solo_danza)
+print("Estudiantes solo en ajedrez:", solo_ajedrez)
 
-# 3. Estudiantes solo en matemáticas (diferencia)
-print(matematicas - fisica)  # Output: {'Juan', 'Marta'}
+# 3. Encontrar todos los estudiantes en alguna actividad (unión)
+todos_estudiantes = futbol | danza | ajedrez
+print("Todos los estudiantes inscritos:", todos_estudiantes)
+
+# 4. Suponiendo que tenemos un conjunto con todos los estudiantes de la universidad
+todos_universidad = {"Ana", "Carlos", "Juan", "Marta", "Luis", "Elena", "Raquel", "Jorge", "Sofia", "Miguel"}
+sin_actividad = todos_universidad - todos_estudiantes
+print("Estudiantes sin actividad:", sin_actividad)

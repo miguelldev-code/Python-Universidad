@@ -22,6 +22,8 @@ print(type(usuario))  # Output: <class 'tuple'>
 usuario = {"Juan", "juan", "1234"}
 print(type(usuario))  # Output: <class 'set'>
 
+
+
 # Ejemplo de uso de conjuntos (Set):
 # Para evitar elementos duplicados y trabajar con operaciones de conjuntos, como unión, intersección, etc.
 
@@ -29,6 +31,8 @@ print(type(usuario))  # Output: <class 'set'>
 frutas = {"manzana", "banana", "naranja"}
 # O también se puede crear un conjunto a partir de una lista con `set()`
 frutas = set(["manzana", "banana", "naranja"])
+
+
 
 # 5. Agregar y eliminar elementos en un conjunto
 # Método `add`: Añade un elemento al conjunto
@@ -43,24 +47,4 @@ print(frutas)  # Output: {'manzana', 'naranja', 'pera'}
 frutas.discard("banana")  # No hace nada porque "banana" ya fue removida
 print(frutas)  # Output: {'manzana', 'naranja', 'pera'}
 
-# 6. Operaciones de Conjuntos
 
-# Definimos dos conjuntos para ver cómo funcionan las operaciones
-A = {1, 2, 3}
-B = {3, 4, 5}
-
-# Unión de conjuntos (elementos en A o B o en ambos)
-C = A | B  # o A.union(B)
-print(C)  # Output: {1, 2, 3, 4, 5}
-
-# Intersección de conjuntos (elementos en común entre A y B)
-C = A & B  # o A.intersection(B)
-print(C)  # Output: {3}
-
-# Diferencia de conjuntos (elementos en A que no están en B)
-C = A - B  # o A.difference(B)
-print(C)  # Output: {1, 2}
-
-# Diferencia simétrica (elementos únicos de A y B, sin los comunes)
-C = A ^ B  # o A.symmetric_difference(B)
-print(C)  # Output: {1, 2, 4, 5}

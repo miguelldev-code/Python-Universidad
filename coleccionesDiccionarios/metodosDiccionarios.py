@@ -4,7 +4,6 @@ persona = {"nombre": "Ana", "edad": 28}
 # get()
 # Obtiene el valor de una clave especificada. Permite agregar un valor predeterminado si la clave no existe.
 print(persona.get("nombre"))  # Output: Ana
-print(persona.get("profesion", "Desconocido"))  # Output: Desconocido
 
 # keys()
 # Devuelve una vista de todas las claves del diccionario, útil para iterar sobre ellas.
