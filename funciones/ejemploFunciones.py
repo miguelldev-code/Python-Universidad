@@ -4,7 +4,7 @@ def saludar(nombre="Usuario"):
 
 saludar()  # Imprime: Hola, Usuario!
 saludar("Carlos")  # Imprime: Hola, Carlos!
-
+    
 # Uso de *args y **kwargs
 def mostrar_datos(*args, **kwargs):
     print("Argumentos posicionales:", args)
