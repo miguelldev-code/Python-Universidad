@@ -9,6 +9,9 @@ def nombre_funcion(parametros):
 
 #               EJEMPLO PRACTICO
 
+a = 2
+b = 3
+
 # Función que suma dos números
 def sumar(a, b):
     resultado = a + b
@@ -16,3 +19,4 @@ def sumar(a, b):
 
 # Llamada a la función
 print(sumar(3, 5))  # Imprime: 8
+print(a, b)
