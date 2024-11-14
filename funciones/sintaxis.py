@@ -1,6 +1,6 @@
 def nombre_funcion(parametros):
     # Cuerpo de la función
-    return valor  # Opcional
+    return #valor  # Opcional
 
 # def: Palabra clave que indica el inicio de una definición de función.
 # nombre_funcion: Identificador que se le asigna a la función.
