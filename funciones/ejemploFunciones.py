@@ -11,13 +11,3 @@ saludar("Carlos")  # Imprime: Hola, Carlos!
 # print(nombre)    No funciona porque solo se lee el bloque
 
 
-
-# Uso de *args y **kwargs
-def mostrar_datos(*args, **kwargs):
-    print("Argumentos posicionales:", args)
-    print("Argumentos nombrados:", kwargs)
-
-mostrar_datos(1, 2, 3, nombre="Ana", edad=30)
-# Imprime:
-# Argumentos posicionales: (1, 2, 3)
-# Argumentos nombrados: {'nombre': 'Ana', 'edad': 30}
