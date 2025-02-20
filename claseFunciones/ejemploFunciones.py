@@ -14,36 +14,37 @@ def calcular_area_cuadrado(lado):
 
 def calcular_area():
     print("\n📏 Seleccione la figura para calcular el área:")
-    print("1. Rectángulo")
-    print("2. Triángulo")
-    print("3. Círculo")
-    print("4. Cuadrado")
+    print("1️⃣ Rectángulo")
+    print("2️⃣ Triángulo")
+    print("3️⃣ Círculo")
+    print("4️⃣ Cuadrado")
 
     opcion = input("\nIngrese el número de la figura: ")
 
-    if opcion == "1":
-        base = float(input("Ingrese la base: "))
-        altura = float(input("Ingrese la altura: "))
-        area = calcular_area_rectangulo(base, altura)
-        print(f"📐 Área del rectángulo: {area:.2f}")
+    match opcion:
+        case "1":
+            base = float(input("Ingrese la base: "))
+            altura = float(input("Ingrese la altura: "))
+            area = calcular_area_rectangulo(base, altura)
+            print(f"📐 Área del rectángulo: {area}")
 
-    elif opcion == "2":
-        base = float(input("Ingrese la base: "))
-        altura = float(input("Ingrese la altura: "))
-        area = calcular_area_triangulo(base, altura)
-        print(f"🔺 Área del triángulo: {area:.2f}")
+        case "2":
+            base = float(input("Ingrese la base: "))
+            altura = float(input("Ingrese la altura: "))
+            area = calcular_area_triangulo(base, altura)
+            print(f"🔺 Área del triángulo: {area}")
 
-    elif opcion == "3":
-        radio = float(input("Ingrese el radio: "))
-        area = calcular_area_circulo(radio)
-        print(f"⚪ Área del círculo: {area:.2f}")
+        case "3":
+            radio = float(input("Ingrese el radio: "))
+            area = calcular_area_circulo(radio)
+            print(f"⚪ Área del círculo: {area}")
 
-    elif opcion == "4":
-        lado = float(input("Ingrese el lado: "))
-        area = calcular_area_cuadrado(lado)
-        print(f"🟪 Área del cuadrado: {area:.2f}")
+        case "4":
+            lado = float(input("Ingrese el lado: "))
+            area = calcular_area_cuadrado(lado)
+            print(f"🟪 Área del cuadrado: {area:.2f}")
 
-    else:
-        print("❌ Opción no válida. Debe ser un número del 1 al 4.")
+        case _:
+            print("❌ Opción no válida. Debe ser un número del 1 al 4.")
 
 calcular_area()
