@@ -1,5 +1,5 @@
 import math
-
+    
 # Función para calcular el área de un rectángulo
 def calcular_area_rectangulo(base, altura):
     return base * altura

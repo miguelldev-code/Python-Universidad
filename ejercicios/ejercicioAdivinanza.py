@@ -1,11 +1,28 @@
+# Adivinar numero aleatorio del 1 al 10 y en caso de no acertar, 
+# decir si es numero ingresado es mas alto o bajo.
+
+# importar random que contiene el codigo para ejecutar # aleatorios
+# while 
+
 import random
 
-numero = int(input("Ingresa un número del 1 al 10: "))
+#Creamos variables
 
-aleatorio = random.randint(1, 10)
+numeroAleatorio = random.randint(1, 10)
+intento = int(input("Adivina el numero del 1 al 10:"))
 
-print(f"El numero es: {aleatorio}")
-if numero == aleatorio:
-    print("¡Adivinaste!")
-else:
-    print("Sigue intentando")
+# Vericacion - Comparacion
+
+# numeroAleatorio = 5
+# intento = 5
+while intento != numeroAleatorio:
+    if intento < numeroAleatorio:
+        print("Numero mas alto")
+    if intento > numeroAleatorio:
+        print("Numero mas bajo")
+
+    intento = int(input("Intenta de nuevo: "))
+
+
+# SI esta fuera del bucle, quiere decir que se acerto al numeroAleatorio
+print("Acertaste!")

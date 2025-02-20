@@ -1,53 +1,49 @@
-import math 
+import math
 
-# Area de rectangulo, truangulo, circulo y cuadrado
-
-def calculoRectangulo(base, altura):
+def calcular_area_rectangulo(base, altura):
     return base * altura
 
-def calculoTriangulo(base, altura):
-    return (base * altura)/2
+def calcular_area_triangulo(base, altura):
+    return (base * altura) / 2
 
-def calculoCirculo(radio):
+def calcular_area_circulo(radio):
     return math.pi * radio ** 2
 
-def calculoCuadrado(lado):
-    return lado * lado
+def calcular_area_cuadrado(lado):
+    return lado ** 2
 
-def calculoFIgura():
-    print("Seleccione la figura para calcular el area")
-    print("1. Rectangulo")
-    print("2. Triangulo")
-    print("3. Circulo")
+def calcular_area():
+    print("\n📏 Seleccione la figura para calcular el área:")
+    print("1. Rectángulo")
+    print("2. Triángulo")
+    print("3. Círculo")
     print("4. Cuadrado")
 
-    opcion = input("Ingrese el numero de la figura")
+    opcion = input("\nIngrese el número de la figura: ")
 
-    match opcion:
-        case "1":
-            base = float(input("Ingrese la base"))
-            altura = float(input("Ingrese la altura"))
-            area = calculoRectangulo(base, altura)
-            print("Area del rectangulo", area)
-        case "2":
-            base = float(input("Ingrese la base"))
-            altura = float(input("Ingrese la altura"))
-            area = calculoTriangulo(base, altura)
-            print("Area del rectangulo", area)
-        
-        case "3":
-            radio = float(input("Ingrese la base"))
-            area = calculoCirculo(radio)
-            print("Area del rectangulo", area)
-        
-        case "4":
-            lado = float(input("Ingrese la base"))
-            area = calculoCuadrado(lado)
-            print("Area del rectangulo", area)
+    if opcion == "1":
+        base = float(input("Ingrese la base: "))
+        altura = float(input("Ingrese la altura: "))
+        area = calcular_area_rectangulo(base, altura)
+        print(f"📐 Área del rectángulo: {area:.2f}")
 
-        case _:
-            print("Opcion no valida, elija del 1 al 4")
+    elif opcion == "2":
+        base = float(input("Ingrese la base: "))
+        altura = float(input("Ingrese la altura: "))
+        area = calcular_area_triangulo(base, altura)
+        print(f"🔺 Área del triángulo: {area:.2f}")
 
+    elif opcion == "3":
+        radio = float(input("Ingrese el radio: "))
+        area = calcular_area_circulo(radio)
+        print(f"⚪ Área del círculo: {area:.2f}")
 
+    elif opcion == "4":
+        lado = float(input("Ingrese el lado: "))
+        area = calcular_area_cuadrado(lado)
+        print(f"🟪 Área del cuadrado: {area:.2f}")
 
-calculoFIgura()
+    else:
+        print("❌ Opción no válida. Debe ser un número del 1 al 4.")
+
+calcular_area()
