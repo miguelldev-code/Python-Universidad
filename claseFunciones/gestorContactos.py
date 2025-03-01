@@ -26,7 +26,7 @@ def buscar_contacto():
     """Busca un contacto por nombre."""
     nombre = input("🔍 Ingrese el nombre del contacto a buscar: ")
     if nombre in contactos:
-        print(f"\n📌 Contacto encontrado:\n📞 {contactos[nombre]['Teléfono']} | ✉️ {contactos[nombre]['Correo']}\n")
+        print(f" Contacto encontrado: {contactos[nombre]['Teléfono']}  {contactos[nombre]['Correo']}")
     else:
         print("❌ Contacto no encontrado.\n")
 
