@@ -1,7 +1,6 @@
 mes = int(input("Ingresa el mes (1 a 12): "))
 estacion = None
 
-
 if mes == 1 or mes == 2 or mes == 12:
     estacion = "Invierno"
 elif mes == 3 or mes == 4 or mes == 5:
