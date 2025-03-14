@@ -1,24 +1,16 @@
 # Programa que verifica la disponibilidad de productos en el inventario.
-
 # Compara una lista de solicitudes con los productos del inventario.
 
 # Si algún producto solicitado no está en el inventario, se agrega a una 
 # lista de productos faltantes.
-
 # Al final, si hay productos faltantes, los muestra; si no, informa que 
 # todos los productos están disponibles.
 
-
 # Lista de productos disponibles en el inventario
-
 # Lista de productos solicitados
-
 # Lista vacía para almacenar los productos que no están en el inventario
-
 # Bucle para verificar cada producto solicitado
-
 # Si el producto no está en el inventario, se agrega a la lista de faltantes
-
 # Verificar si hay productos faltantes y mostrar el resultado
 
 

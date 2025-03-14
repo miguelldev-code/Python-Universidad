@@ -13,7 +13,7 @@ print(z)
 
 # Concatenacion entre texto  y variables
 
-usuario = "Daniel"
+usuario = "User1"
 
 mensajeBienvenida = "Hola, " + usuario
 print(mensajeBienvenida)
