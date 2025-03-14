@@ -8,3 +8,4 @@ print(type(entero))
 print(type(cadena))
 print(type(flotante))
 print(type(booleano))
+
