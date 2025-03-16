@@ -1,4 +1,3 @@
-
 # PRUEBA CONCATENACION
 
 numero1 = "1"
