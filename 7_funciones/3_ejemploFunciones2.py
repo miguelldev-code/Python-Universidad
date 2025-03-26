@@ -1,3 +1,8 @@
+# Ejemplo funciones - calculadora de figuras geometricas
+# 
+# Funciones que permitan calcular 4 figuras geometricas 
+# por medio de un menu que es el que se ejecutara
+
 import math
     
 # Función para calcular el área de un rectángulo
