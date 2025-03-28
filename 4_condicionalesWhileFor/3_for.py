@@ -1,5 +1,7 @@
 # se utiliza cuando sabes cuántas veces necesitas repetir 
-# una acción. El bucle for se ejecuta un número definido 
+# una acción. 
+
+# El bucle for se ejecuta un número definido 
 # de veces.
 
     #      SINTAXIS
