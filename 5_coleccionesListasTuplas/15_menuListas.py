@@ -1,13 +1,9 @@
-
 # Programa que contiene un menú con platos y precios.
 # Ofrece opciones para ver el menú, realizar pedidos, ver los pedidos actuales o salir.
 # Al pedir, el usuario ingresa el plato y cantidad, y el sistema valida si está disponible.
 # Los pedidos se almacenan y luego pueden visualizarse con su costo total.
 # Si se selecciona salir, el programa termina.
 # Maneja entradas inválidas mostrando un mensaje de error.
-
-
-
 
 # Definir el menú de comidas: una lista que contiene los nombres de los platos disponibles.
 
