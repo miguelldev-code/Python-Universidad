@@ -14,3 +14,4 @@ for numero in numeros:
         contador += 1
 
 print(f"Hay {contador} números mayores que 10.")
+
