@@ -1,5 +1,4 @@
-"""
-Enunciado:
+""" Enunciado:
 El usuario ingresará los nombres y notas de N estudiantes. 
 El programa debe identificar al estudiante con la mejor nota y 
 al estudiante con la peor nota.
@@ -7,11 +6,8 @@ al estudiante con la peor nota.
 Pasos:
 
     Crear dos listas vacías: una para nombres y otra para notas.
-
     Pedir al usuario que ingrese el nombre y la nota de 5 estudiantes.
-
     Encontrar la nota más alta y más baja en la lista de notas.
-
     Mostrar el nombre del estudiante con la mejor y la peor nota.
 
 """

@@ -1,5 +1,4 @@
-"""
-Enunciado:
+"""Enunciado:
 El usuario ingresará los nombres completos (nombre y apellido) de 3 personas. 
 El programa debe separar los nombres y apellidos, almacenarlos en listas 
 diferentes y mostrarlos por separado.
@@ -8,13 +7,10 @@ Pasos:
 
     1. Crear tres listas vacías: una para los nombres completos, otra para 
        los nombres y otra para los apellidos.
-
     2. Pedir al usuario que ingrese el nombre completo (nombre y apellido) 
        de 3 personas.
-
     3. Separar el nombre y el apellido de cada entrada y almacenarlos en 
        las listas correspondientes. NOTA: para los usa " ".join(partes[1:])
-
     4. Mostrar por separado las listas de nombres y apellidos.
 """
 
