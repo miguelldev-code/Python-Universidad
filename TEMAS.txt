@@ -1,0 +1,10 @@
+Datos (Variables, tipos de datos y Métodos de cadenas)
+Operadores
+Condicionales if y match case
+ciclos while y for
+Colecciones (listas, tuplas)
+Colecciones (diccionarios, sets)
+Funciones
+Manejo de errores
+Módulos y librerías
+Introducción a POO
