@@ -14,10 +14,6 @@ Pasos:
     4. Mostrar por separado las listas de nombres y apellidos.
 """
 
-
-
-
-
 nombres_completos = []  
 nombres = []  
 apellidos = []  
