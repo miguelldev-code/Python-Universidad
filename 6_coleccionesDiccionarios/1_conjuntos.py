@@ -46,5 +46,3 @@ print(frutas)  # Output: {'manzana', 'naranja', 'pera'}
 # Método `discard`: Similar a `remove`, pero no da error si el elemento no está presente.
 frutas.discard("banana")  # No hace nada porque "banana" ya fue removida
 print(frutas)  # Output: {'manzana', 'naranja', 'pera'}
-
-
