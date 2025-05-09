@@ -12,13 +12,13 @@ except ValueError:
 
 # Estructura
 
-try:
-    # Bloque principal
-except TipoDeError1:
-    # Acción si ocurre ese error
-except TipoDeError2:
-    # Otro tipo de error
-else:
-    # Si NO ocurre ningún error
-finally:
-    # Siempre se ejecuta, haya o no error
+# try:
+#     # Bloque principal
+# except TipoDeError1:
+#     # Acción si ocurre ese error
+# except TipoDeError2:
+#     # Otro tipo de error
+# else:
+#     # Si NO ocurre ningún error
+# finally:
+#     # Siempre se ejecuta, haya o no error

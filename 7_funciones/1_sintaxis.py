@@ -1,5 +1,6 @@
 def nombre_funcion(parametros):
-    # Codigo de la función
+    # Codigo
+    #  de la función
     return #valor  # Opcional
 
 # def: Palabra clave que indica el inicio de una definición de función.

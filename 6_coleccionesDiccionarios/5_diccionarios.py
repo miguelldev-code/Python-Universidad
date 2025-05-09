@@ -23,3 +23,4 @@ print(type(usuario))  # Salida: <class 'dict'>
 print(usuario)
 
 
+
