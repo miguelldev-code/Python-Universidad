@@ -1,0 +1,27 @@
+Ejecuta:
+sqlite3 usuarios.db
+
+Una vez dentro del entorno interactivo, puedes escribir:
+sql
+
+.tables              -- Muestra las tablas disponibles
+SELECT * FROM usuarios;   -- Muestra todos los registros
+
+Para salir:
+.quit
+
+---------------------------------------------------------
+script python
+
+import sqlite3
+
+conexion = sqlite3.connect("usuarios.db")
+cursor = conexion.cursor()
+
+cursor.execute("SELECT * FROM usuarios")
+usuarios = cursor.fetchall()
+
+for usuario in usuarios:
+    print(f"ID: {usuario[0]}, Nombre: {usuario[1]}")
+
+conexion.close()

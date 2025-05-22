@@ -1,0 +1,59 @@
+from http.server import BaseHTTPRequestHandler, HTTPServer
+import json
+
+# Clase que maneja las solicitudes HTTP
+class Manejador(BaseHTTPRequestHandler):
+
+    def do_GET(self):
+        # Verificamos la ruta solicitada
+        if self.path == "/saludo":
+            self.responder_json(200, {"mensaje": "¡Hola desde /saludo!"})
+        elif self.path == "/info":
+            info = {
+                "servidor": "Python HTTP Server",
+                "version": "1.0",
+                "estado": "activo"
+            }
+            self.responder_json(200, info)
+        else:
+            self.responder_json(404, {"error": "Ruta no encontrada"})
+
+    def do_POST(self):
+        # Verificamos la ruta
+        if self.path == "/saludo":
+            longitud = int(self.headers.get('Content-Length', 0))
+            cuerpo = self.rfile.read(longitud).decode('utf-8')
+
+            try:
+                datos = json.loads(cuerpo)  # Intentamos interpretar el cuerpo como JSON
+                nombre = datos.get("nombre", "desconocido")
+                respuesta = {"mensaje": f"Hola, {nombre}. POST recibido correctamente."}
+                self.responder_json(200, respuesta)
+            except json.JSONDecodeError:
+                self.responder_json(400, {"error": "JSON inválido"})
+        else:
+            self.responder_json(404, {"error": "Ruta no encontrada"})
+
+    # ------------------------------------------
+    # Método auxiliar para enviar respuestas JSON
+    # ------------------------------------------
+    def responder_json(self, codigo, contenido):
+        self.send_response(codigo)
+        self.send_header("Content-Type", "application/json")
+        self.end_headers()
+        self.wfile.write(json.dumps(contenido).encode('utf-8'))
+
+
+# Crear y correr el servidor en localhost:8081
+servidor = HTTPServer(('localhost', 8081), Manejador)
+print("Servidor corriendo en http://localhost:8081")
+servidor.serve_forever()
+
+# Hacer get
+# curl http://localhost:8081/saludo
+# curl http://localhost:8081/info
+
+# Hacer post
+# curl -X POST http://localhost:8081/saludo -H "Content-Type: application/json" -d "{\"nombre\":\"Carlos\"}"
+
+

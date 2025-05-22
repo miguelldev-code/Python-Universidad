@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estructura HTML</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    header {
+      background-color: #ffcccc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ccffcc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+      background-color: #f2f2f2;
+      height: 570px;
+    }
+
+    section {
+      flex: 3;
+      background-color: #ccccff;
+      padding: 20px;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #ffffcc;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #d9d9d9;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Mostrar el nombre de cada sección */
+    header::before {
+      content: "HEADER";
+      font-weight: bold;
+    }
+
+    nav::before {
+      content: "NAV";
+      font-weight: bold;
+    }
+
+    section::before {
+      content: "SECTION";
+      font-weight: bold;
+    }
+
+    aside::before {
+      content: "ASIDE";
+      font-weight: bold;
+    }
+
+    footer::before {
+      content: "FOOTER";
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header></header>
+  <nav></nav>
+  <main>
+    <section></section>
+    <aside></aside>
+  </main>
+  <footer></footer>
+
+</body>
+</html>
