@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuarios</title>
+</head>
+<body>
+    <h2>Agregar nuevo usuario</h2>
+    <form method="POST" action="{{ url_for('agregar') }}">
+        Nombre: <input type="text" name="nombre" required>
+        <input type="submit" value="Agregar">
+    </form>
+
+    <h2>Lista de usuarios</h2>
+    <ul>
+        {% for usuario in usuarios %}
+            <li>
+                {{ usuario[1] }} (ID: {{ usuario[0] }})
+                <a href="{{ url_for('editar', id=usuario[0]) }}">Editar</a>
+                <a href="{{ url_for('eliminar', id=usuario[0]) }}">Eliminar</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
