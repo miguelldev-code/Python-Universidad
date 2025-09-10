@@ -28,6 +28,6 @@ producto1 = Producto("Jabon", 20)
 producto2 = Producto("Shampoo", 2)
 
 print(producto1.descripcion)
-print(producto2.mostrar_info)
+print(producto2.descripcion)
 print(producto1.stock())
 print(producto2.stock())
