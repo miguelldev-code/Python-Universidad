@@ -9,7 +9,6 @@ class Vehiculo:
     def detener(self):
         print(f"{self.marca} {self.modelo} se ha detenido.")
 
-
 class Coche(Vehiculo):
     def __init__(self, marca, modelo, num_puertas):
         super().__init__(marca, modelo)  # Llama al constructor de Vehiculo
@@ -25,7 +24,6 @@ class Moto(Vehiculo):
 
     def hacer_caballito(self):
         print("¡La moto está haciendo un caballito!")
-
 
 # Crear objetos
 mi_coche = Coche("Toyota", "Corolla", 4)
